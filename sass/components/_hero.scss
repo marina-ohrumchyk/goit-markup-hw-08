@@ -1,63 +1,57 @@
-.section-hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
+// .section-hero {
+//   padding-top: 200px;
+//   padding-bottom: 200px;
+//   text-align: center;
 
-  background-color: var(--footer-color);
+//   background-color: var(--footer-color);
 
-  max-width: 1600px;
-  min-height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../img/hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+//   max-width: 1600px;
+//   min-height: 600px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     url(../img/hero.jpg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
 
-  &__title {
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+//   &__title {
+//     width: 696px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     margin-bottom: 30px;
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--hero-color);
-  }
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.4;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: var(--hero-color);
+//   }
 
-  &__button {
-    padding: 10px 32px;
-    border: none;
-    box-shadow: 0px 4px 4px var(--color-box-shadow);
-    border-radius: 4px;
+//   &__button {
+//     padding: 10px 32px;
+//     border: none;
+//     box-shadow: 0px 4px 4px var(--color-box-shadow);
+//     border-radius: 4px;
 
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    text-align: center;
-    cursor: pointer;
-    letter-spacing: 0.06em;
-    background-color: var(--link-color);
-    color: var(--hero-color);
+//     font-family: inherit;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.9;
+//     text-align: center;
+//     cursor: pointer;
+//     letter-spacing: 0.06em;
+//     background-color: var(--link-color);
+//     color: var(--hero-color);
 
-    transition: background-color 250ms var(--transition-function);
+//     transition: background-color 250ms var(--transition-function);
 
-    &:active,
-    :hover,
-    :focus {
-      background-color: var(--color-active);
-    }
-  }
-}
-
-// .section-hero__button:active,
-// .section-hero__button:hover,
-// .section-hero__button:focus {
-//   background-color: var(--color-active);
+//     &:active,
+//     &:hover,
+//     &:focus {
+//       background-color: var(--color-active);
+//     }
+//   }
 // }
