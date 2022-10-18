@@ -25,37 +25,65 @@
             <span class="navigation__accent">Web</span>Studio</a
           >
 
-          <ul class="navigation__list list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="./index.html">Студія</a>
+          <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
+            <svg
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+              aria-controls="menu-container"
+            >
+              <use class="icon-menu" href="./img/sprite.svg#icon-menu"></use>
+              <use class="icon-cross" href="./img/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+        </nav>
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav>
+            <ul class="navigation__list list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="./index.html">Студія</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link carrent" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts-list list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="mailto:info@devstudio.com">
+                <svg class="icon-envelope" width="16" height="12">
+                  <use href="./img/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link carrent" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="">Контакти</a>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="tel:+380961111111">
+                <svg class="icon-smartphone" width="10" height="16">
+                  <use href="./img/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-
-        <ul class="contacts-list list">
-          <li class="contacts-list__item">
-            <a class="contacts-list__link" href="mailto:info@devstudio.com">
-              <svg class="icon-envelope" width="16" height="12">
-                <use href="./img/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts-list__item">
-            <a class="contacts-list__link" href="tel:+380961111111">
-              <svg class="icon-smartphone" width="10" height="16">
-                <use href="./img/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="social__list list">
+            <li class="social__item">
+              <a class="social__link" href="">Instagram</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="">Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="">Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -90,7 +118,7 @@
                     class="work-img"
                     src="./img/portfolio/technoquack.jpg"
                     alt="сайт сторінки"
-                    width="370"
+                    width=""
                   />
                   <p class="tex-details">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -108,7 +136,7 @@
             <li class="item-work">
               <a class="work-link" href="">
                 <div class="work-details">
-                  <img class="work-img" src="./img/portfolio/poster.jpg" alt="постер" width="370" />
+                  <img class="work-img" src="./img/portfolio/poster.jpg" alt="постер" width="" />
                   <p class="tex-details">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -125,12 +153,7 @@
             <li class="item-work">
               <a class="work-link" href="">
                 <div class="work-details">
-                  <img
-                    class="work-img"
-                    src="./img/portfolio/seafood.jpg"
-                    alt="логотип"
-                    width="370"
-                  />
+                  <img class="work-img" src="./img/portfolio/seafood.jpg" alt="логотип" width="" />
                   <p class="tex-details">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -147,12 +170,7 @@
             <li class="item-work">
               <a class="work-link" href="">
                 <div class="work-details">
-                  <img
-                    class="work-img"
-                    src="./img/portfolio/prime.jpg"
-                    alt="наушники"
-                    width="370"
-                  />
+                  <img class="work-img" src="./img/portfolio/prime.jpg" alt="наушники" width="" />
                   <p class="tex-details">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -169,7 +187,7 @@
             <li class="item-work">
               <a class="work-link" href="">
                 <div class="work-details">
-                  <img class="work-img" src="./img/portfolio/boxes.jpg" alt="коробки" width="370" />
+                  <img class="work-img" src="./img/portfolio/boxes.jpg" alt="коробки" width="" />
                   <p class="tex-details">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -190,7 +208,7 @@
                     class="work-img"
                     src="./img/portfolio/inspiration.jpg"
                     alt="екран компютера"
-                    width="370"
+                    width=""
                   />
                   <p class="tex-details">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -208,7 +226,7 @@
             <li class="item-work">
               <a class="work-link" href="">
                 <div class="work-details">
-                  <img class="work-img" src="./img/portfolio/edition.jpg" alt="книга" width="370" />
+                  <img class="work-img" src="./img/portfolio/edition.jpg" alt="книга" width="" />
                   <p class="tex-details">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
