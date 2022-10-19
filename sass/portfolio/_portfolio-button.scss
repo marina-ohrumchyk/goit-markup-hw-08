@@ -1,15 +1,27 @@
 .portfolio-button {
   display: flex;
+
+  margin-bottom: 50px;
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
+    // flex-basis: 33.333%;
+    max-width: 326px;
+    max-height: 91px;
   }
-  justify-content: center;
-  margin-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 
   &__item {
     margin-right: 8px;
     &:last-child {
       margin-right: 0;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
   &__link {
