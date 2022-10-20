@@ -147,20 +147,21 @@
 .contacts-list {
   @media screen and (max-width: 767px) {
     margin-bottom: 64px;
+    // padding-top: 21px;
+    // padding-bottom: 21px;
   }
 
   @media screen and (min-width: 768px) {
-    // margin-left: 96px;
-    // margin-left: auto;
-    // padding-top: 21px;
-    // padding-bottom: 21px;
     margin-left: auto;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    // margin-left: 315px;
     margin-left: auto;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   &__item {
