@@ -41,6 +41,9 @@
 }
 
 .menu-container {
+  @media screen and (min-width: 480px) {
+   z-index: 6;
+  }
   // max-height: 480px;
   // max-height: 796px;
   // display: none;
