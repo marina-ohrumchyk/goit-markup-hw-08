@@ -77,6 +77,12 @@
   }
 
   &__button {
+    @media screen and (max-width: 479px) {
+      min-width: 200px;
+      height: 50px;
+      padding: 0;
+    }
+ 
     padding: 10px 24px;
 
     font-weight: 700;

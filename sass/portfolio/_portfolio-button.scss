@@ -12,18 +12,18 @@
     justify-content: center;
   }
 
-  // &__item {
-  //   margin-right: 8px;
-  //   &:last-child {
-  //     margin-right: 0;
-  //   }
-  //   @media screen and (max-width: 767px) {
-  //     margin-bottom: 15px;
-  //     &:last-child {
-  //       margin-bottom: 0;
-  //     }
-  //   }
-  // }
+  
+
+  &__item {
+    @media screen and (min-width: 768px) {
+      margin-right: 8px;
+    &:last-child {
+      margin-right: 0;
+    }
+    }
+  }
+   
+  
   &__link {
     padding: 6px 22px;
     cursor: pointer;

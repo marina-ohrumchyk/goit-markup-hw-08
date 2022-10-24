@@ -442,6 +442,13 @@ body {
   color: #ffffff;
   background-color: var(--link-color);
 }
+@media screen and (max-width: 479px) {
+  .section-hero__button {
+    min-width: 200px;
+    height: 50px;
+    padding: 0;
+  }
+}
 
 .section-hero {
   background-repeat: no-repeat;
@@ -762,6 +769,11 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: var(--hero-color);
+}
+@media screen and (max-width: 767px) {
+  .item-team {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .item-team {
@@ -1172,12 +1184,6 @@ body {
   padding-left: 16px;
   color: var(--hero-color);
 }
-@media screen and (min-width: 480px) {
-  .subscription__input {
-    max-width: 450px;
-    height: 50px;
-  }
-}
 @media screen and (min-width: 768px) {
   .subscription__input {
     width: 450px;
@@ -1247,6 +1253,14 @@ body {
             justify-content: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .portfolio-button__item {
+    margin-right: 8px;
+  }
+  .portfolio-button__item:last-child {
+    margin-right: 0;
+  }
+}
 .portfolio-button__link {
   padding: 6px 22px;
   cursor: pointer;
@@ -1300,7 +1314,7 @@ body {
   color: var(--hero-color);
   position: absolute;
   padding: 63px 24px;
-  width: 370px;
+  min-width: 370px;
   height: 294px;
   top: 0;
   left: 0;
@@ -1344,7 +1358,7 @@ body {
   background: var(--hero-color);
   border: 1px solid var(--color-border);
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .item-work {
     width: 100%;
     margin-bottom: 30px;
@@ -1360,6 +1374,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .item-work {
+    height: 100%;
     max-width: 370px;
     margin: 0 30px 30px 0;
   }
@@ -1428,6 +1443,11 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
