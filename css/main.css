@@ -233,11 +233,6 @@ body {
   color: var(--link-color);
 }
 
-@media screen and (max-width: 767px) {
-  .contacts-list {
-    margin-bottom: 64px;
-  }
-}
 @media screen and (min-width: 768px) {
   .contacts-list {
     margin-left: auto;
@@ -411,8 +406,13 @@ body {
 }
 
 .section-hero {
-  padding: 118px 60px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section-hero__title {
   max-width: 360px;
@@ -523,6 +523,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-tex-color);
+}
+@media screen and (max-width: 479px) {
+  .section-title {
+    font-size: 25px;
+  }
 }
 @media screen and (min-width: 768px) {
   .section-title {
@@ -842,13 +847,6 @@ body {
     margin-bottom: 50px;
   }
 }
-.customer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
 @media screen and (min-width: 768px) {
   .customer__list {
     margin: -15px;
@@ -857,6 +855,11 @@ body {
 @media screen and (min-width: 480px) {
   .customer__list {
     margin: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -866,14 +869,20 @@ body {
         flex-wrap: nowrap;
   }
 }
-.customer__item {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  max-width: 210px;
+@media screen and (max-width: 479px) {
+  .customer__item {
+    margin-bottom: 30px;
+    max-width: 210px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 @media screen and (min-width: 480px) {
   .customer__item {
     margin: 15px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 210px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1120,6 +1129,11 @@ body {
   margin-bottom: 20px;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .subscription__mail {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscription__mail {
     margin-right: 12px;
@@ -1176,7 +1190,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 .subscription__input {
-  max-width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1311,10 +1325,10 @@ body {
 .tex-details {
   font-size: 18px;
   line-height: 1.5;
+  letter-spacing: 0.03em;
   color: var(--hero-color);
   position: absolute;
-  padding: 63px 24px;
-  min-width: 370px;
+  min-width: 100%;
   height: 294px;
   top: 0;
   left: 0;
@@ -1325,6 +1339,27 @@ body {
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
   transition: transform 250ms, -webkit-transform 250ms;
+}
+@media screen and (max-width: 479px) {
+  .tex-details {
+    padding: 15px 15px;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .tex-details {
+    padding: 77px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tex-details {
+    padding: 49px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tex-details {
+    padding: 63px 24px;
+  }
 }
 
 .item-work:hover .tex-details {

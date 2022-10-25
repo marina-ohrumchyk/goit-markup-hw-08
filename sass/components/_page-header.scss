@@ -17,6 +17,7 @@
 // }
 
 .menu-button {
+  
   display: inline-flex;
   margin-left: auto;
   padding: 0;
@@ -57,11 +58,14 @@
     top: 100%;
     left: 0;
     width: 100%;
+    // width: 100vw;
+    // height: 100vh;
 
     padding-top: 48px;
     padding-left: 40px;
     padding-bottom: 48px;
     padding-right: 83px;
+
     &.is-open {
       display: block;
     }
@@ -76,6 +80,7 @@
 .navigation {
   &__list {
     @media screen and (max-width: 767px) {
+
       margin-bottom: 302px;
     }
     @media screen and (min-width: 768px) {
@@ -151,7 +156,7 @@
 
 .contacts-list {
   @media screen and (max-width: 767px) {
-    margin-bottom: 64px;
+    // margin-bottom: 64px;
     // padding-top: 21px;
     // padding-bottom: 21px;
   }
