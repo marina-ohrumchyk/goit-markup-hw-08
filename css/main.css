@@ -376,12 +376,13 @@ body {
     row-gap: 15px;
   }
   .social__item {
-    margin-right: 20px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
   .social__item:last-child {
-    margin-right: 0;
+    border-right: 0;
   }
   .social__link {
+    padding-right: 10px;
     display: block;
     text-decoration: none;
     font-weight: 500;
@@ -393,6 +394,12 @@ body {
   .social__link:hover, .social__link:focus {
     color: var(--link-color);
   }
+}
+
+.social__icon {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .navigation {
