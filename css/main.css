@@ -440,13 +440,22 @@ body {
 }
 
 .section-hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-  max-width: 1600px;
-  min-height: 600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  min-height: 400px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .section-hero__title {
   max-width: 360px;
@@ -481,6 +490,11 @@ body {
     min-width: 200px;
     height: 50px;
     padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-hero__button {
+    padding: 10px 32px;
   }
 }
 
