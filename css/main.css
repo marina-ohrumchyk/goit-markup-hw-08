@@ -1686,9 +1686,9 @@ textarea {
 }
 
 .checkbox-form {
-  margin-right: 7px;
-  width: 16px;
-  height: 15px;
+  margin-right: 10px;
+  min-width: 16px;
+  min-height: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1700,6 +1700,19 @@ textarea {
           justify-content: center;
   border-radius: 2px;
   border: 2px solid var(--secondary-tex-color);
+}
+@media screen and (min-width: 480px) {
+  .checkbox-form {
+    margin-right: 8px;
+  }
+}
+
+.checkbox__text {
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .form-coordination input:checked + label .checkbox-form {
@@ -1731,10 +1744,13 @@ textarea {
 .link-coordination {
   text-decoration: none;
   margin-left: 5px;
+  position: relative;
   color: var(--link-color);
 }
 .link-coordination::after {
   content: "";
+  left: 0;
+  position: absolute;
   display: block;
   width: 100%;
   height: 1px;

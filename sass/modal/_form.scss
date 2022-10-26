@@ -187,14 +187,32 @@
 //   border-radius: 4px;
 // }
 .checkbox-form {
-  margin-right: 7px;
-  width: 16px;
-  height: 15px;
+  margin-right: 10px;
+  min-width: 16px;
+  min-height: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 2px;
   border: 2px solid var(--secondary-tex-color);
+
+  @media screen and (min-width: 480px) {
+    margin-right: 8px;
+  }
+}
+
+.checkbox__text{
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: .03em;
+
+
+
+// letter-spacing: 0.03em;
+
+color: #757575;
+
 }
 
 .form-coordination input:checked + label .checkbox-form {
@@ -216,16 +234,21 @@
 .link-coordination {
   text-decoration: none;
   margin-left: 5px;
+  position: relative;
   color: var(--link-color);
 
   &::after {
     content: '';
+    left: 0;
+    position: absolute;
     display: block;
     width: 100%;
     height: 1px;
 
     background: var(--link-color);
   }
+
+
 }
 // .link-coordination::after {
 //   content: '';
