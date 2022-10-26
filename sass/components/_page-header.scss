@@ -50,7 +50,9 @@
 
 .menu-container {
   position: relative;
-
+  // @media screen and (max-width: 767px){
+  //   display: none;
+  // }
   
   // max-height: 480px;
   // max-height: 796px;
@@ -288,7 +290,9 @@
   @media screen and (max-width: 767px) {
     &__list {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: wrap;    
+      column-gap: 8px;
+      row-gap: 15px;
     }
 
     &__item {
